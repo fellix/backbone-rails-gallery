@@ -39,6 +39,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.1.1)
+    decent_exposure (1.0.1)
     diff-lcs (1.1.2)
     ejs (1.0.0)
     erubis (2.7.0)
@@ -111,6 +112,7 @@ GEM
       railties (~> 3.1.0.rc1)
       sass (>= 3.1.3)
       sprockets (>= 2.0.0.beta.9)
+    shoulda (2.11.3)
     sprockets (2.0.0.beta.10)
       hike (~> 1.0)
       rack (~> 1.0)
@@ -132,12 +134,14 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-script
+  decent_exposure
   haml-rails
   jquery-rails
   rails (= 3.1.0.rc4)
   rails-backbone
   rspec-rails
   sass-rails (~> 3.1.0.rc)
+  shoulda
   sqlite3
   turn
   uglifier

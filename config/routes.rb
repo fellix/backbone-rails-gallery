@@ -1,4 +1,9 @@
 BackboneGallery::Application.routes.draw do
+  
+  root to: "home#index"
+
+  match 'collections' => "album_collections#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

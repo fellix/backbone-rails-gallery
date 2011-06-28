@@ -15,6 +15,7 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'rails-backbone'
 gem 'haml-rails'
+gem 'decent_exposure'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -25,8 +26,12 @@ gem 'haml-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'shoulda'
+end
+
 group :test do
   # Pretty printed test output
   gem 'turn'
-  gem 'rspec-rails'
 end

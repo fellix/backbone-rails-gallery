@@ -1,0 +1,15 @@
+!!! 5
+%html
+  %head
+    %title
+      BackboneGallery
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #container
+      #header
+        %h1
+          = link_to "Multi-Level Backbone Gallery", root_path
+      #main
+        = yield
