@@ -1,0 +1,91 @@
+
+body {
+  font-family: "Lucida Grande", Lucida, Helvetica, Arial, sans-serif;
+  background: #FFF;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+  background: #000;
+  margin: 0px;
+  padding: 20px;
+}
+#header h1 {
+  font-family: Arial;
+  color: #FFF;
+  margin: 0px;
+}
+
+#header h3 {
+  font-family:Arial;
+  padding:0px;
+  margin:2px;
+  font-size:0.9em;
+  color:#666;
+}
+
+#header h1 a {
+  color:white;
+  text-decoration:none;
+}
+
+#header .cart-info {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  padding: 10px;
+  background: #714625;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+}
+img {
+  border: 0;
+}
+
+.item {
+	-moz-border-radius:7px 7px 7px 7px;
+	-webkit-border-radius:7px 7px 7px 7px;
+	border-radius:7px 7px 7px 7px;
+	border:1px solid #CCCCCC;
+	float:left;
+	font-size:12px;
+	margin:10px;
+	padding:2px;
+	text-align:center;
+	width:250px;
+	}
+	
+.item-title {
+  font-weight: bold;
+}
+.item-artist {
+  font-weight: bold;
+  font-size: 14px;
+}
+.item-detail .item-image {
+  float:left;
+}
+.item-detail .item-info {
+float:left;
+padding:100px 33px 0;
+}
+
+.subalbum img{
+   width:170px;
+}
+
+.jstest {
+  padding:10px;
+}
+
+ .back-link {
+ padding-top:10px;
+ float:left;
+}
+
+.gallery { list-style-type:none}
+.gallery img { width:250px;}
