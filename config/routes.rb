@@ -4,6 +4,10 @@ BackboneGallery::Application.routes.draw do
 
   match 'collections' => "album_collections#index"
   
+  controller :albums do
+    match 'collection/:collection_id/albums' => :index
+  end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,38 @@
+%script{id: "indexTmpl", type: "text/x-jquery-tmpl"}
+  .item.drop-shadow.round
+    .item-image
+      = link_to image_tag("${attributes.image}", alt: "$(attributes.title)")
+    .item-artist
+      = "$(attributes.artist)"
+    .item-title
+      = "$(attributes.title)"
+    .item.year
+      = "$(attributes.year)"
+
+%script{id: "subindexTmpl", type: "text/x-jquery-tmpl"}
+  .item.drop-shadow.round
+    .item-image.subalbum
+      = link_to image_tag("$(attributes.image)", alt: "$(attributes.title)"), "#subalbum/${subalbum}/${attributes.pid}"
+    .item-artist
+      "$(attributes.artist)"
+    .item-title
+      "$(attributes.title)"
+    .item-price
+      $"$(attributes.price)"
+
+%script{id: "itemTmpl", type: "text/x-jquery-tmpl"}
+  .item-detail
+    .item-image.drop-shadow.round
+      = image_tag("${attributes.large_imge}", alt: "${attributes.title}")
+    .item-info
+      .item-artist
+        "$(attributes.artist)"
+      .item-title
+        "$(attributes.title)"
+      .item-price
+        $"$(attributes.price)"
+      %br
+      .item-link
+        = link_to "Buy this item", "$(attributes.url)", class: "button"
+      .back-link
+        = link_to "< Back to Albums", "#", class: "button"

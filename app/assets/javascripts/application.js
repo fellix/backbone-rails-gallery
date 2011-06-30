@@ -5,6 +5,8 @@
 // the compiled file.
 //
 //= require jquery
+//= require jquery.tmpl.min
+//= require jquery.validjson
 //= require jquery_ujs
 //= require underscore
 //= require backbone
@@ -12,3 +14,4 @@
 //= require backbone_datalink
 //= require backbone/backbone_gallery
 //= require_tree .
+
