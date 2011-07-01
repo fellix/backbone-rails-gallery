@@ -1,4 +1,5 @@
 $(function() {
-  window.controller = new AlbumCollectionController;
+  new AlbumCollectionController;
+  new AlbumController;
   Backbone.history.start();
 });

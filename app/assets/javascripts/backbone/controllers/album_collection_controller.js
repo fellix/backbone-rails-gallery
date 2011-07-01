@@ -1,10 +1,10 @@
 var AlbumCollectionController = Backbone.Controller.extend({
+  
   _index:null,
+  
   routes: {
-      "": "index",
-      "collection/:id": "show",
-      "subalbum/:id/" : "directphoto",
-      "subalbum/:id/:num" : "hashphoto"
+    "": "index",
+    "collection/:id": "show",
   },
   
   initialize: function(options) {
@@ -14,7 +14,10 @@ var AlbumCollectionController = Backbone.Controller.extend({
   index: function() {
     this._index.render();
   },
+  
   show: function(id){
-    
+    var albums = new AlbumsCollection(id);
+    var show = new ShowView(albums);
+    show.render();
   }
 });

@@ -12,7 +12,7 @@ data.each do |collection|
   if collection["subalbum"]
     collection["subalbum"].each do |subalbum|
       Album.create! artist: subalbum["artist"], image: subalbum["image"].split("/")[1], large_image: subalbum["large_image"].split("/")[1],
-        price: subalbum["price"], url: subalbum["url"]
+        price: subalbum["price"], url: subalbum["url"], album_collection_id: album_collection.id, title: subalbum["title"]
     end
   end
 end

@@ -2,6 +2,7 @@ class CreateAlbums < ActiveRecord::Migration
   def change
     create_table :albums do |t|
       t.references :album_collection
+      t.string :title
       t.string :artist
       t.string :image
       t.string :large_image

@@ -6,6 +6,7 @@ BackboneGallery::Application.routes.draw do
   
   controller :albums do
     match 'collection/:collection_id/albums' => :index
+    match 'collection/:collection_id/album/:id' => :show
   end
   
   # The priority is based upon order of creation:

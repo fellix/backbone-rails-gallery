@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20110628031413) do
 
   create_table "albums", :force => true do |t|
     t.integer  "album_collection_id"
+    t.string   "title"
     t.string   "artist"
     t.string   "image"
     t.string   "large_image"
