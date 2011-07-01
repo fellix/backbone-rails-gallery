@@ -1,6 +1,5 @@
 var IndexView = Backbone.View.extend({
   el: $("#main"),
-  template: JST["backbone/templates/album_collections/index"],
   
   initialize: function(){
     _.bindAll(this, 'render');
@@ -34,5 +33,4 @@ var AlbumCollectionView = Backbone.View.extend({
     $(this.el).html(this.template(this.model.toJSON()));
     return this;
   }
-  
 });

@@ -1,6 +1,5 @@
 var AlbumShowView = Backbone.View.extend({
   el: $("#main"),
-  template: JST["backbone/templates/albums/show"],
   collection: null,
   
   initialize: function(albums){
@@ -10,7 +9,6 @@ var AlbumShowView = Backbone.View.extend({
     this.collection.fetch();
   },
   render: function() {
-    var sg = this;
     $("#gallery").html("");
     this.collection.each(this.addOne);
     return this;
