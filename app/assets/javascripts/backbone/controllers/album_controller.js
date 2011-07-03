@@ -1,4 +1,4 @@
-var AlbumController = Backbone.Controller.extend({
+var AlbumController = Backbone.Router.extend({
   routes: {
       "collection/:album_collection_id/album/:id" : "show",
   },

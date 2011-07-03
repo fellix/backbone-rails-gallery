@@ -9,7 +9,7 @@
 //= require jquery.validjson
 //= require jquery_ujs
 //= require underscore
-//= require backbone
+//= require backbone-min
 //= require backbone_rails_sync
 //= require backbone_datalink
 //= require backbone/backbone_gallery

@@ -1,4 +1,4 @@
-var AlbumCollectionController = Backbone.Controller.extend({
+var AlbumCollectionController = Backbone.Router.extend({
   
   _index:null,
   
